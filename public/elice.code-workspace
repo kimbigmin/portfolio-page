@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../Project/프로그래머스스터디"
+		},
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../Deepdive"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "엘리스SW"
+	}
+}

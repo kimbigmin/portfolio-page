@@ -1,30 +1,26 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
   list-style: none;
 }
-
 
 header {
   padding-top: 4rem;
   text-align: center;
   height: 100vh;
-  
 }
 
 header #navbar {
-    top:0;
-    left:0;
-    position: fixed;
-    width: 100%;
-    background-color: rgba(163, 163, 163, 0.3);
-    transform: translateX(0px);
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(163, 163, 163, 0.3);
+  transform: translateX(0px);
 }
-
 
 header #navbar ul {
   text-align: center;
@@ -46,17 +42,13 @@ header #nav-Btn {
   display: none;
 }
 
-
-
 /* nav mediaQuery */
 
-
 @media screen and (max-width: 720px) {
-  
   header {
     padding-top: 0;
   }
-  
+
   header #navbar {
     width: 200px;
 
@@ -65,26 +57,21 @@ header #nav-Btn {
     justify-content: center;
     align-items: flex-start;
 
-    background-color: rgb(205, 203, 203);
+    background-color: rgb(205, 203, 203, 0.9);
     height: 100%;
     z-index: 5;
-    top:0;
+    top: 0;
     left: 0;
     transform: translateX(-200px);
-    
-}
+  }
   header #navbar ul {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    
-  
   }
 
   header #navbar li a {
-
     display: block;
     color: black;
   }
@@ -102,24 +89,19 @@ header #nav-Btn {
     padding: 1rem 1rem 0 1rem;
     cursor: pointer;
   }
-
-}; 
-
+}
 
 header #main-intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
-
 header #main-intro img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
 header #main-intro h2 {
@@ -131,7 +113,6 @@ header #main-intro p {
 }
 
 header #scroll-pointer {
-
   transform: translateY(100px);
   text-align: center;
   margin-top: 2rem;
@@ -142,12 +123,15 @@ header #scroll-pointer {
 }
 
 @keyframes changeHeight {
-  from {margin-top: 2rem;}
-  to {margin-top: 3rem;}
+  from {
+    margin-top: 2rem;
+  }
+  to {
+    margin-top: 3rem;
+  }
 }
 
 /* ----------------main----------------------- */
-
 
 /* profile */
 
@@ -155,7 +139,6 @@ main #profile {
   height: 100vh;
   background-color: rgba(199, 199, 199, 0.342);
 }
-
 
 main #profile .profile-box {
   position: relative;
@@ -175,15 +158,12 @@ main #profile p {
   color: gray;
   font-size: 1rem;
   font-weight: lighter;
-  
 }
-
-
 
 main #profile ul {
   display: flex;
   justify-content: space-around;
-  
+
   font-size: 2rem;
   width: 100%;
 }
@@ -193,9 +173,6 @@ main #profile li {
   margin: 3rem;
   color: #f57f17;
 }
-
-
-
 
 /* Introduction */
 
@@ -212,21 +189,15 @@ main #introductions {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-
-
 }
 
-main #introductions article{
-
+main #introductions article {
   border-radius: 10px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   width: 60%;
   margin: 5rem 0 5rem 0;
-
 }
-
-
 
 article h2 {
   text-align: center;
@@ -247,7 +218,6 @@ article .contents-box li {
   text-align: center;
 }
 
-
 article .contents-box i {
   margin-top: 1rem;
   font-size: 3.5rem;
@@ -265,7 +235,6 @@ article .contents-box p {
   padding: 2rem;
 }
 
-
 /* portfolio */
 
 main #portfolio {
@@ -279,7 +248,7 @@ main #portfolio .portfolio-box {
   justify-content: center;
   align-items: center;
   height: 100vh;
-} 
+}
 
 main #portfolio .portfolio-box p {
   position: absolute;
@@ -289,16 +258,17 @@ main #portfolio .portfolio-box p {
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-
 }
 
 @keyframes changeSize {
-  from {font-size: 1rem;}
-  to {font-size: 2rem;
-  color:salmon;}
+  from {
+    font-size: 1rem;
+  }
+  to {
+    font-size: 2rem;
+    color: salmon;
+  }
 }
-
-
 
 footer {
   display: flex;
@@ -311,5 +281,3 @@ footer {
 
   font-size: 0.7rem;
 }
-
-
