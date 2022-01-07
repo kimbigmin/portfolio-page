@@ -20,30 +20,14 @@ function navbarToggle() {
   }
 }
 
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY >= 300) {
-//     document.getElementById("profile").scrollIntoView({ behavior: "smooth" });
-//   }
-// });
+// navbar list 클릭 후 화면 전환시 부드러운 스크롤 기능
 
-document.getElementById("home-Btn").addEventListener("click", (e) => {
-  e.preventDefault();
-  document.getElementById("header").scrollIntoView({ behavior: "smooth" });
-});
+$navbar.addEventListener("click", (event) => {
+  if (event.target.tagName === "A") {
+    event.preventDefault();
 
-document.getElementById("profile-Btn").addEventListener("click", (e) => {
-  e.preventDefault();
-  document.getElementById("profile").scrollIntoView({ behavior: "smooth" });
-});
+    const viewId = event.target.hash.slice(1);
 
-document.getElementById("introductions-Btn").addEventListener("click", (e) => {
-  e.preventDefault();
-  document
-    .getElementById("introductions")
-    .scrollIntoView({ behavior: "smooth" });
-});
-
-document.getElementById("portfolio-btn").addEventListener("click", (e) => {
-  e.preventDefault();
-  document.getElementById("portfolio").scrollIntoView({ behavior: "smooth" });
+    document.getElementById(viewId).scrollIntoView({ behavior: "smooth" });
+  }
 });
