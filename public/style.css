@@ -38,6 +38,13 @@ header #navbar li a {
   color: gray;
 }
 
+header #navbar li a:hover {
+  color: rgba(232, 152, 66, 1);
+  transition-property: color;
+  transition-duration: 0.5s;
+  font-weight: bold;
+}
+
 header #nav-Btn {
   display: none;
 }
