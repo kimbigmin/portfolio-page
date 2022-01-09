@@ -187,6 +187,13 @@ main .fab {
   font-weight: 500;
 }
 
+main .fab:hover {
+  color: rgba(232, 152, 66, 1);
+  transition-property: color;
+  transition-duration: 0.5s;
+  font-weight: bold;
+}
+
 /* Introduction */
 
 main #introductions {
