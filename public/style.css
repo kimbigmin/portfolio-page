@@ -104,7 +104,7 @@ header #main-intro {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  transform: translateY(50%);
 }
 
 header #main-intro span {
@@ -114,8 +114,9 @@ header #main-intro span {
 }
 
 header #main-intro h2 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 2rem;
+  width: 75%;
 }
 
 header #main-intro img {
@@ -133,9 +134,10 @@ header #main-intro p {
 }
 
 header #scroll-pointer {
-  transform: translateY(100px);
+  position: absolute;
   text-align: center;
-  margin-top: 2rem;
+  left: 50%;
+  top: 90%;
   animation-name: changeHeight;
   animation-duration: 0.6s;
   animation-iteration-count: infinite;
