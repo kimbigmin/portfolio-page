@@ -84,7 +84,8 @@ header #nav-Btn {
   }
 
   header #main-intro {
-    transform: translateY(8rem);
+    transform: translateY(10rem);
+    margin-top: 0rem;
   }
 
   header #nav-Btn {
@@ -103,6 +104,18 @@ header #main-intro {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 10rem;
+}
+
+header #main-intro span {
+  background: linear-gradient(to right top, #ff6d2e 0%, #ec9f05 74%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+header #main-intro h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
 header #main-intro img {
@@ -149,12 +162,21 @@ main #profile {
 }
 
 main #profile .profile-box {
-  position: relative;
-  top: 15%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  width: 50%;
+  width: 100%;
   margin: auto;
+}
+
+main #profile .profile-box .title {
+  margin-bottom: 7rem;
+  font-size: 2rem;
+  background: linear-gradient(to right top, #ff6d2e 0%, #ec9f05 74%);
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 main #profile h2 {
@@ -169,17 +191,24 @@ main #profile p {
 }
 
 main #profile ul {
-  display: flex;
-  justify-content: space-around;
-
-  font-size: 2rem;
+  font-size: 1.4rem;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem;
 }
 
 main #profile li {
   display: inline;
-  margin: 3rem;
   color: #f57f17;
+  margin: 0rem 2rem;
+}
+
+main #profile .profile-box-feature {
+  color: black;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 main .fab {
@@ -253,6 +282,12 @@ article .contents-box p {
   text-align: center;
   margin-top: 1rem;
   padding: 2rem;
+}
+
+@media screen and (max-width: 720px) {
+  main #introductions article {
+    width: 90%;
+  }
 }
 
 /* portfolio */
