@@ -1,0 +1,145 @@
+header {
+  padding-top: 4rem;
+  text-align: center;
+  height: 100vh;
+}
+
+header #navbar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(163, 163, 163, 0.3);
+  transform: translateX(0px);
+}
+
+header #navbar ul {
+  text-align: center;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+header #navbar li {
+  display: inline-block;
+  margin: 10px;
+  width: 20%;
+}
+
+header #navbar li a {
+  color: gray;
+}
+
+header #navbar li a:hover {
+  color: rgba(232, 152, 66, 1);
+  transition-property: color;
+  transition-duration: 0.5s;
+  font-weight: bold;
+}
+
+header #nav-Btn {
+  display: none;
+}
+
+/* nav mediaQuery */
+
+@media screen and (max-width: 720px) {
+  header {
+    padding-top: 0;
+  }
+
+  header #navbar {
+    width: 200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: rgb(205, 203, 203, 0.9);
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    transform: translateX(-200px);
+  }
+  header #navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  header #navbar li a {
+    display: block;
+    color: black;
+  }
+
+  header #main-intro {
+    transform: translateY(10rem);
+    margin-top: 0rem;
+  }
+
+  header #nav-Btn {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 1.4rem;
+    padding: 1rem 1rem 0 1rem;
+    cursor: pointer;
+  }
+}
+
+header #main-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(50%);
+}
+
+header #main-intro span {
+  background: linear-gradient(to right top, #ff6d2e 0%, #ec9f05 74%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+header #main-intro h2 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  width: 75%;
+}
+
+header #main-intro img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+header #main-intro h2 {
+  padding-bottom: 2rem;
+}
+
+header #main-intro p {
+  color: black;
+}
+
+header #scroll-pointer {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 90%;
+  animation-name: changeHeight;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changeHeight {
+  from {
+    margin-top: 2rem;
+  }
+  to {
+    margin-top: 3rem;
+  }
+}

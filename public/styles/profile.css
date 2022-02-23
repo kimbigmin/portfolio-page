@@ -1,0 +1,67 @@
+/* profile */
+
+main #profile {
+  height: 100vh;
+}
+
+main #profile .profile-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+main #profile .profile-box .title {
+  margin-bottom: 7rem;
+  font-size: 2rem;
+  background: linear-gradient(to right top, #ff6d2e 0%, #ec9f05 74%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+main #profile h2 {
+  padding: 1rem;
+}
+
+main #profile p {
+  margin-top: 2rem;
+  color: gray;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+main #profile ul {
+  font-size: 1.4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem;
+}
+
+main #profile li {
+  display: inline;
+  color: #f57f17;
+  margin: 0rem 2rem;
+}
+
+main #profile .profile-box-feature {
+  color: black;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+main .fab {
+  color: black;
+  font-weight: 500;
+}
+
+main .fab:hover {
+  color: rgba(232, 152, 66, 1);
+  transition-property: color;
+  transition-duration: 0.5s;
+  font-weight: bold;
+}

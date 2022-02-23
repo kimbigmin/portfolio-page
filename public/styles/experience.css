@@ -1,0 +1,113 @@
+/* Introduction */
+
+main #introductions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 0;
+  width: 100%;
+  background-color: rgba(199, 199, 199, 0.16);
+}
+
+main #introductions article {
+  border-radius: 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 70%;
+  margin: 5rem 0 5rem 0;
+}
+
+article .contents-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article .contents-box li {
+  list-style-type: disc;
+  margin: 1rem 0rem 1rem 1rem;
+}
+
+article .contents-box h2 {
+  width: 80%;
+  justify-self: flex-start;
+  margin: 3rem 0rem 5rem 0rem;
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+article .contents-box h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+article .contents-box h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  background: linear-gradient(to right top, #ff6d2e 0%, #ec9f05 74%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+article .contents-box p {
+  margin: 1rem 0rem;
+}
+
+article .contents-box .contents-inner-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+article .contents-box .inner-container-title {
+  width: 40%;
+}
+
+article .contents-box .inner-container-contents {
+  width: 70%;
+}
+
+article .contents-box .contents-detail {
+  width: 80%;
+
+  margin: 0rem auto 4rem;
+}
+
+@media screen and (max-width: 720px) {
+  main #introductions article {
+    width: 90%;
+  }
+
+  article .contents-box h2 {
+    width: 90%;
+  }
+
+  article .contents-box .contents-inner-container {
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+  }
+
+  article .contents-box .inner-container-title {
+    margin-bottom: 5rem;
+    width: 90%;
+  }
+
+  article .contents-box .inner-container-title h3 {
+    font-size: 2.3rem;
+  }
+
+  article .contents-box .inner-container-contents {
+    width: 100%;
+  }
+
+  article .contents-box .contents-detail {
+    width: 100%;
+    margin: 0rem 0rem 4rem;
+  }
+}
