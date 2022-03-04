@@ -68,8 +68,19 @@ article .contents-box .inner-container-title {
   width: 40%;
 }
 
+article .contents-box .skills-inner-container-title {
+  width: 40%;
+}
+
 article .contents-box .inner-container-contents {
   width: 70%;
+  font-size: 1.1rem;
+}
+
+article .contents-box .skills-inner-container-contents {
+  width: 70%;
+  font-size: 1.1rem;
+  margin-top: -0.8rem;
 }
 
 article .contents-box .contents-detail {
@@ -78,7 +89,7 @@ article .contents-box .contents-detail {
   margin: 0rem auto 4rem;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 860px) {
   main #introductions article {
     width: 90%;
   }
@@ -98,11 +109,21 @@ article .contents-box .contents-detail {
     width: 90%;
   }
 
+  article .contents-box .skills-inner-container-title {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    width: 90%;
+  }
+
   article .contents-box .inner-container-title h3 {
     font-size: 2.3rem;
   }
 
   article .contents-box .inner-container-contents {
+    width: 100%;
+  }
+
+  article .contents-box .skills-inner-container-contents {
     width: 100%;
   }
 
