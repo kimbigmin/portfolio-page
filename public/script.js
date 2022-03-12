@@ -4,7 +4,7 @@ const $navbar = document.querySelector("#navbar");
 menuBtn.addEventListener("click", navbarToggle);
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth >= 720) {
+  if (window.innerWidth >= 860) {
     $navbar.style.transform = "translateX(0px)";
   } else {
     $navbar.style.transform = "translateX(-200px)";
