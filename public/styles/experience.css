@@ -85,8 +85,13 @@ article .contents-box .skills-inner-container-contents {
 
 article .contents-box .contents-detail {
   width: 80%;
-
   margin: 0rem auto 4rem;
+}
+
+article .highlight {
+  background: linear-gradient(to right top, #ff6d2e 0%, #ec9f05 74%);
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 @media screen and (max-width: 860px) {
