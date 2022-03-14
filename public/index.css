@@ -11,3 +11,12 @@
   font-family: "Zen Kaku Gothic Antique", sans-serif;
   list-style: none;
 }
+
+::-moz-selection {
+  background: #ec9f05c8;
+  color: black;
+}
+::selection {
+  background: #ec9f05c8;
+  color: black;
+}

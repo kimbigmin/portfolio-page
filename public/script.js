@@ -1,7 +1,7 @@
-const menuBtn = document.querySelector("#nav-Btn");
+const $menuBtn = document.querySelector("#nav-Btn");
 const $navbar = document.querySelector("#navbar");
 
-menuBtn.addEventListener("click", navbarToggle);
+$menuBtn.addEventListener("click", navbarToggle);
 
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 860) {
@@ -23,7 +23,11 @@ $navbar.addEventListener("click", (event) => {
 
 // Scroll에 따른 헤더바를 보여주고 숨기는 기능 이벤트
 let scrollHeight = 0;
+
 window.addEventListener("scroll", throttle(headerShowAndHide, 300));
+
+// let currentPage = 0;
+// window.addEventListener("scroll", throttle(pageMoveByScroll, 2000));
 
 // 여기서부터 이벤트 리스너 함수입니다.
 
@@ -65,4 +69,38 @@ function throttle(callback, delay) {
       event
     );
   };
+}
+
+function pageMoveByScroll() {
+  console.log("실행");
+  const pages = ["header", "profile", "introductions", "portfolio"];
+
+  const top = document
+    .getElementById(pages[currentPage])
+    .getBoundingClientRect().top;
+
+  if (currentPage >= pages.length - 1) {
+    return;
+  } else {
+    durationScrollTo(top, 1000);
+    currentPage++;
+  }
+}
+
+function durationScrollTo(y, duration = 1000) {
+  const stepY = (y - window.scrollY) / duration;
+
+  const currentY = window.scrollY;
+
+  const startTime = new Date().getTime();
+
+  const scrollInterval = setInterval(() => {
+    const now = new Date().getTime() - startTime;
+
+    window.scrollTo({ top: currentY + stepY * now });
+
+    if (duration <= now) {
+      clearInterval(scrollInterval);
+    }
+  }, 1);
 }

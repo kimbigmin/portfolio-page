@@ -2,6 +2,7 @@ header {
   padding-top: 4rem;
   text-align: center;
   height: 100vh;
+  background-color: rgba(199, 199, 199, 0.16);
 }
 
 header #navbar {
@@ -38,56 +39,6 @@ header #navbar li a:hover {
 
 header #nav-Btn {
   display: none;
-}
-
-/* nav mediaQuery */
-
-@media screen and (max-width: 860px) {
-  header {
-    padding-top: 0;
-  }
-
-  header #navbar {
-    width: 200px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-
-    background-color: rgb(205, 203, 203, 0.9);
-    height: 100%;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    transform: translateX(-200px);
-  }
-  header #navbar ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-
-  header #navbar li a {
-    display: block;
-    color: black;
-  }
-
-  header #main-intro {
-    transform: translateY(10rem);
-    margin-top: 0rem;
-  }
-
-  header #nav-Btn {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    font-size: 1.4rem;
-    padding: 1rem 1rem 0 1rem;
-    cursor: pointer;
-  }
 }
 
 header #main-intro {
@@ -141,5 +92,73 @@ header #scroll-pointer {
   }
   to {
     margin-top: 3rem;
+  }
+}
+
+/* nav mediaQuery */
+
+@media screen and (max-width: 860px) {
+  header {
+    padding-top: 0;
+  }
+
+  header #navbar ul {
+    text-align: left;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  header #navbar li {
+    display: inline-block;
+    margin: 10px;
+    width: 100%;
+  }
+
+  header #navbar {
+    width: 200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: rgb(205, 203, 203, 0.9);
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    transform: translateX(-200px);
+  }
+  header #navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  header #navbar li a {
+    display: block;
+    color: black;
+  }
+
+  header #main-intro {
+    transform: translateY(10rem);
+    margin-top: 0rem;
+  }
+
+  header #nav-Btn {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 1.4rem;
+    padding: 1rem 1rem 0 1rem;
+    cursor: pointer;
+  }
+
+  header #main-intro h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    width: 75%;
   }
 }

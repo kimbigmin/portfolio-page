@@ -2,32 +2,54 @@
 
 main #profile {
   height: 100vh;
-}
-
-main #profile .profile-box {
+  width: 56%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  margin: auto;
-}
-
-main #profile .profile-box .title {
-  margin-bottom: 7rem;
-  font-size: 2rem;
-  background: linear-gradient(to right top, #ff6d2e 0%, #ec9f05 74%);
-  color: transparent;
-  -webkit-background-clip: text;
 }
 
 main #profile h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: -1.2rem;
+  margin-top: 4.5rem;
+}
+
+.contents {
+  display: flex;
+  height: 100%;
+  align-self: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 5rem;
+}
+
+#profile img {
+  width: 200px;
+  height: 260px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+main #profile h3 {
   padding: 1rem;
 }
 
 main #profile p {
-  margin-top: 2rem;
   color: gray;
   font-size: 1rem;
   font-weight: lighter;
@@ -39,7 +61,7 @@ main #profile ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0rem;
+  margin: 2rem 0 4rem 0;
 }
 
 main #profile li {
@@ -51,7 +73,7 @@ main #profile li {
 main #profile .profile-box-feature {
   color: black;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 main .fab {
@@ -64,4 +86,41 @@ main .fab:hover {
   transition-property: color;
   transition-duration: 0.5s;
   font-weight: bold;
+}
+
+@media screen and (max-width: 860px) {
+  main #profile {
+    width: 85%;
+  }
+
+  main #profile h2 {
+    margin-left: 1rem;
+    margin: 1rem 0 4rem 0.5rem;
+  }
+
+  .profile-box {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0.5rem;
+  }
+
+  .contents {
+    margin-left: 0;
+  }
+
+  .info {
+    margin-top: 0;
+  }
+
+  .contents p {
+    margin-bottom: 1rem;
+  }
+
+  main #profile ul {
+    margin: 2rem 0;
+  }
+
+  main #profile .profile-box-feature {
+    font-size: 1rem;
+  }
 }

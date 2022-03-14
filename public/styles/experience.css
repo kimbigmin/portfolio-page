@@ -85,7 +85,7 @@ article .contents-box .skills-inner-container-contents {
 
 article .contents-box .contents-detail {
   width: 80%;
-  margin: 0rem auto 4rem;
+  margin: 0rem auto 6rem;
 }
 
 article .highlight {
@@ -134,6 +134,6 @@ article .highlight {
 
   article .contents-box .contents-detail {
     width: 100%;
-    margin: 0rem 0rem 4rem;
+    margin-bottom: 6rem;
   }
 }
