@@ -21,9 +21,11 @@ $navbar.addEventListener("click", (event) => {
   }
 });
 
-window.addEventListener("scroll", (e) => {
-  console.log(window.scrollY);
-});
+// Scroll에 따른 헤더바를 보여주고 숨기는 기능 이벤트
+let scrollHeight = 0;
+window.addEventListener("scroll", headerShowAndHide);
+
+// 여기서부터 이벤트 리스너 함수입니다.
 
 function navbarToggle() {
   if ($navbar.style.transform === "translateX(-200px)") {
@@ -31,5 +33,17 @@ function navbarToggle() {
     $navbar.style.transition = "transform 0.3s";
   } else {
     $navbar.style.transform = "translateX(-200px)";
+  }
+}
+
+function headerShowAndHide() {
+  if (scrollHeight > window.scrollY) {
+    scrollHeight = window.scrollY;
+    $navbar.style.top = "0px";
+    $navbar.style.transition = "top ease 600ms";
+  } else if (scrollHeight < window.scrollY) {
+    scrollHeight = window.scrollY;
+    $navbar.style.top = "-200px";
+    $navbar.style.transition = "top ease 1500ms";
   }
 }
