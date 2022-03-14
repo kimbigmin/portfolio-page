@@ -18,7 +18,7 @@ main #profile h2 {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: center;
+  justify-content: stretch;
 }
 
 .info {
@@ -102,10 +102,12 @@ main .fab:hover {
     flex-direction: column;
     width: 100%;
     margin-left: 0.5rem;
+    align-items: center;
   }
 
   .contents {
     margin-left: 0;
+    align-self: center;
   }
 
   .info {
