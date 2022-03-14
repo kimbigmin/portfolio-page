@@ -15,11 +15,14 @@ window.addEventListener("resize", () => {
 $navbar.addEventListener("click", (event) => {
   if (event.target.tagName === "A") {
     event.preventDefault();
-
     const viewId = event.target.hash.slice(1);
 
     document.getElementById(viewId).scrollIntoView({ behavior: "smooth" });
   }
+});
+
+window.addEventListener("scroll", (e) => {
+  console.log(window.scrollY);
 });
 
 function navbarToggle() {
