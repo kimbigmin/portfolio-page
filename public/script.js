@@ -37,13 +37,15 @@ function navbarToggle() {
 }
 
 function headerShowAndHide() {
-  if (scrollHeight > window.scrollY) {
-    scrollHeight = window.scrollY;
-    $navbar.style.top = "0px";
-    $navbar.style.transition = "top ease 600ms";
-  } else if (scrollHeight < window.scrollY) {
-    scrollHeight = window.scrollY;
-    $navbar.style.top = "-200px";
-    $navbar.style.transition = "top ease 1500ms";
+  if (window.innerWidth >= 860) {
+    if (scrollHeight > window.scrollY) {
+      scrollHeight = window.scrollY;
+      $navbar.style.top = "0px";
+      $navbar.style.transition = "top ease 600ms";
+    } else if (scrollHeight < window.scrollY) {
+      scrollHeight = window.scrollY;
+      $navbar.style.top = "-200px";
+      $navbar.style.transition = "top ease 1500ms";
+    }
   }
 }
