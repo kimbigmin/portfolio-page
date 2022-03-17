@@ -62,7 +62,7 @@ function registerEvents($target) {
     }
   });
 }
-
+// 모달창 닫는 함수
 function modalClose() {
   modal.remove();
   isClickedModal = false;
