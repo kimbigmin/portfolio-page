@@ -46,14 +46,21 @@ $portfolioBox.addEventListener("click", (e) => {
   document.body.style.overflow = "hidden";
 });
 
-// 포트폴리오 모달창 닫기 이벤트
+// 포트폴리오 모달창 닫기 이벤트 (닫기 버튼 클릭시)
 $modalCloseBtn.addEventListener("click", () => {
   if (isClickedModal) {
     modalClose();
   }
 });
+// 포트폴리오 모달창 닫기 이벤트 (바깥 쪽 클릭시)
 $portfolioModal.addEventListener("click", (e) => {
   if (e.target === e.target.closest(".portfolio-modal")) {
+    modalClose();
+  }
+});
+// 포트폴리오 모달창 닫기 이벤트 (ESC 입력시)
+window.addEventListener("keyup", (e) => {
+  if (isClickedModal && e.key === "Escape") {
     modalClose();
   }
 });
