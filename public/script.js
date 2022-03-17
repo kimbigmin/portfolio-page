@@ -1,7 +1,12 @@
+new Portfolio().render();
+
 const $menuBtn = document.querySelector("#nav-Btn");
 const $navbar = document.querySelector("#navbar");
+const $portfolioBox = document.querySelector(".portfolio-box");
 
+const $portfolioModal = document.querySelector(".portfolio-modal");
 $menuBtn.addEventListener("click", navbarToggle);
+const $modalCloseBtn = document.querySelector(".modal-closeBtn");
 
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 860) {
@@ -28,6 +33,30 @@ window.addEventListener("scroll", throttle(headerShowAndHide, 300));
 
 // let currentPage = 0;
 // window.addEventListener("scroll", throttle(pageMoveByScroll, 2000));
+
+// 포트폴리오 모달창 열기 이벤트
+let isClickedModal = false;
+
+$portfolioBox.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (!isClickedModal) {
+    $portfolioModal.style.display = "flex";
+    isClickedModal = true;
+  }
+  document.body.style.overflow = "hidden";
+});
+
+// 포트폴리오 모달창 닫기 이벤트
+$modalCloseBtn.addEventListener("click", () => {
+  if (isClickedModal) {
+    modalClose();
+  }
+});
+$portfolioModal.addEventListener("click", (e) => {
+  if (e.target === e.target.closest(".portfolio-modal")) {
+    modalClose();
+  }
+});
 
 // 여기서부터 이벤트 리스너 함수입니다.
 
@@ -103,4 +132,10 @@ function durationScrollTo(y, duration = 1000) {
       clearInterval(scrollInterval);
     }
   }, 1);
+}
+
+function modalClose() {
+  $portfolioModal.style.display = "none";
+  isClickedModal = false;
+  document.body.style.overflow = "scroll";
 }
