@@ -1,39 +1,32 @@
-function Portfolio({ title, githubUrl, videoUrl, imgUrl, $main }) {
-  this.title = title;
-  this.githubUrl = githubUrl;
-  this.videoUrl = videoUrl;
-  this.imgUrl = imgUrl;
+export default function Portfolio(initialState, $main) {
+  this.state = initialState;
 
-  const $portfolio = document.createElement("div");
-  $portfolio.className = "portfolio-modal";
-
-  $main.appendChild($portfolio);
+  this.$node = document.createElement("div");
+  this.$node.className = "portfolio-modal";
+  $main.appendChild(this.$node);
 
   this.render = () => {
-    $portfolio.innerHTML = `
+    this.$node.innerHTML = `
   <div class="modal-contents">
     <li class="modal-closeBtn">페이지 닫기</li>
     <div class="modal-title">
-      <h2>${this.title}</h2>
-      <a href="${this.githubUrl}" target="_blank">GitHub주소 : ${this.githubUrl}</a>
+      <h2>${this.state.title}</h2>
+      <a href="${this.state.githubUrl}" target="_blank">GitHub주소 : ${this.state.githubUrl}</a>
     </div>
     <video width="80%" autoplay controls muted>
-      <source src="${this.videoUrl}" type="video/mp4">
+      <source src="${this.state.videoUrl}" type="video/mp4">
     </video>
-    <img src="${this.imgUrl}"/>
+    <img src="${this.state.imgUrl}"/>
   </div>
 `;
   };
 
   this.remove = () => {
-    $main.removeChild($portfolio);
+    $main.removeChild(this.$node);
   };
 
   this.setState = (nextState) => {
-    this.title = nextState.title;
-    this.githubUrl = nextState.githubUrl;
-    this.videoUrl = nextState.videoUrl;
-    this.imgUrl = nextState.imgUrl;
+    this.state = nextState;
     this.render();
   };
 }

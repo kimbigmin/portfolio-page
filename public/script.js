@@ -1,32 +1,7 @@
-const $main = document.querySelector("main");
-
-const projects = {
-  kkabla: {
-    title: "KKABAL - IT 부트캠프 정보 공유 웹 커뮤니티",
-    githubUrl: "https://github.com/kimbigmin/KKABLA",
-    videoUrl: "./video/kkabla.mp4",
-    imgUrl: "./image/kkabla_notion.png",
-    $main: $main,
-  },
-  inspace: {
-    title: "INSPACE - 독서실 좌석 관리 어플리케이션",
-    githubUrl: "http://",
-    videoUrl: "",
-    imgUrl: "",
-    $main: $main,
-  },
-  timeTracker: {
-    title: "Time Tracker - 시간계획표 관리 및 분석 어플리케이션",
-    githubUrl: "http://",
-    videoUrl: "",
-    imgUrl: "",
-    $main: $main,
-  },
-};
+import "./portfolioModal.js";
 
 const $menuBtn = document.querySelector("#nav-Btn");
 const $navbar = document.querySelector("#navbar");
-const $portfolioBox = document.querySelector(".portfolio-box");
 
 $menuBtn.addEventListener("click", navbarToggle);
 
@@ -52,46 +27,6 @@ $navbar.addEventListener("click", (event) => {
 let scrollHeight = 0;
 
 window.addEventListener("scroll", throttle(headerShowAndHide, 300));
-
-// 포트폴리오 모달창 열기 이벤트
-let isClickedModal = false;
-let $portfolioModal;
-let modal;
-
-$portfolioBox.addEventListener("click", (e) => {
-  const nodeId = e.target.closest("li").id;
-  const isNode = document.querySelector(".portfolio-modal");
-
-  if (!isClickedModal && isNode) {
-    modal.setState(projects[`${nodeId}`]);
-  }
-
-  if (!isClickedModal && !isNode) {
-    modal = new Portfolio(projects[`${nodeId}`]);
-    modal.render();
-    $portfolioModal = document.querySelector(".portfolio-modal");
-    isClickedModal = true;
-    registerEvents($portfolioModal);
-  }
-  document.body.style.overflow = "hidden";
-});
-
-// 모달창 닫기 이벤트 등록 함수
-function registerEvents($target) {
-  $target.addEventListener("click", (e) => {
-    if (isClickedModal && e.target.className === "portfolio-modal") {
-      modalClose(modal); // 포트폴리오 모달창 닫기 이벤트 (바깥 쪽 클릭시)
-    } else if (isClickedModal && e.target.className === "modal-closeBtn") {
-      modalClose(modal); // 포트폴리오 모달창 닫기 이벤트 (닫기 버튼 클릭시)
-    }
-  });
-  // 포트폴리오 모달창 닫기 이벤트 (ESC 입력시)
-  window.addEventListener("keyup", (e) => {
-    if (isClickedModal && e.key === "Escape") {
-      modalClose(modal);
-    }
-  });
-}
 
 // 여기서부터 이벤트 리스너 함수입니다.
 
@@ -167,10 +102,4 @@ function durationScrollTo(y, duration = 1000) {
       clearInterval(scrollInterval);
     }
   }, 1);
-}
-
-function modalClose($modal) {
-  $modal.remove();
-  isClickedModal = false;
-  document.body.style.overflow = "scroll";
 }
