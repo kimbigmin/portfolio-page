@@ -102,22 +102,54 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.199);
+  background-color: rgba(0, 0, 0, 0.605);
 }
 
 .portfolio-modal .modal-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 70%;
-  height: 80%;
+  height: 95%;
   background-color: white;
   margin: auto;
   overflow: scroll;
 }
 
+.modal-contents img {
+  width: 70%;
+  margin: auto;
+}
+
 .modal-closeBtn {
-  float: right;
+  align-self: flex-end;
+  position: fixed;
   font-size: 1rem;
-  margin: 0.8rem;
+  margin: 1rem;
   cursor: pointer;
+}
+
+.modal-contents .modal-title {
+  width: 100%;
+  margin: auto;
+  padding: 4rem 4rem 4rem 11rem;
+  border-bottom: 1px rgba(128, 128, 128, 0.151) solid;
+}
+
+.modal-title a {
+  color: black;
+  display: block;
+  margin-top: 1rem;
+}
+
+.modal-contents video {
+  margin: 5rem 0 3rem 0;
+}
+.modal-contents h2 {
+  font-size: 2rem;
+  background: linear-gradient(to right top, #ff6d2e 0%, #ec9f05 74%);
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 footer {
