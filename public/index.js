@@ -1,2 +1,2 @@
-import "./portfolioModal.js";
-import "./navbar.js";
+import "./js/portfolioModal.js";
+import "./js/navbar.js";
