@@ -1,12 +1,34 @@
-new Portfolio().render();
+const $main = document.querySelector("main");
+
+const projects = {
+  kkabla: {
+    title: "KKABAL - IT 부트캠프 정보 공유 웹 커뮤니티",
+    githubUrl: "https://github.com/kimbigmin/KKABLA",
+    videoUrl: "./video/kkabla.mp4",
+    imgUrl: "./image/kkabla_notion.png",
+    $main: $main,
+  },
+  inspace: {
+    title: "INSPACE - 독서실 좌석 관리 어플리케이션",
+    githubUrl: "http://",
+    videoUrl: "",
+    imgUrl: "",
+    $main: $main,
+  },
+  timeTracker: {
+    title: "Time Tracker - 시간계획표 관리 및 분석 어플리케이션",
+    githubUrl: "http://",
+    videoUrl: "",
+    imgUrl: "",
+    $main: $main,
+  },
+};
 
 const $menuBtn = document.querySelector("#nav-Btn");
 const $navbar = document.querySelector("#navbar");
 const $portfolioBox = document.querySelector(".portfolio-box");
 
-const $portfolioModal = document.querySelector(".portfolio-modal");
 $menuBtn.addEventListener("click", navbarToggle);
-const $modalCloseBtn = document.querySelector(".modal-closeBtn");
 
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 860) {
@@ -31,39 +53,45 @@ let scrollHeight = 0;
 
 window.addEventListener("scroll", throttle(headerShowAndHide, 300));
 
-// let currentPage = 0;
-// window.addEventListener("scroll", throttle(pageMoveByScroll, 2000));
-
 // 포트폴리오 모달창 열기 이벤트
 let isClickedModal = false;
+let $portfolioModal;
+let modal;
 
 $portfolioBox.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (!isClickedModal) {
-    $portfolioModal.style.display = "flex";
+  const nodeId = e.target.closest("li").id;
+  const isNode = document.querySelector(".portfolio-modal");
+
+  if (!isClickedModal && isNode) {
+    modal.setState(projects[`${nodeId}`]);
+  }
+
+  if (!isClickedModal && !isNode) {
+    modal = new Portfolio(projects[`${nodeId}`]);
+    modal.render();
+    $portfolioModal = document.querySelector(".portfolio-modal");
     isClickedModal = true;
+    registerEvents($portfolioModal);
   }
   document.body.style.overflow = "hidden";
 });
 
-// 포트폴리오 모달창 닫기 이벤트 (닫기 버튼 클릭시)
-$modalCloseBtn.addEventListener("click", () => {
-  if (isClickedModal) {
-    modalClose();
-  }
-});
-// 포트폴리오 모달창 닫기 이벤트 (바깥 쪽 클릭시)
-$portfolioModal.addEventListener("click", (e) => {
-  if (e.target === e.target.closest(".portfolio-modal")) {
-    modalClose();
-  }
-});
-// 포트폴리오 모달창 닫기 이벤트 (ESC 입력시)
-window.addEventListener("keyup", (e) => {
-  if (isClickedModal && e.key === "Escape") {
-    modalClose();
-  }
-});
+// 모달창 닫기 이벤트 등록 함수
+function registerEvents($target) {
+  $target.addEventListener("click", (e) => {
+    if (isClickedModal && e.target.className === "portfolio-modal") {
+      modalClose(modal); // 포트폴리오 모달창 닫기 이벤트 (바깥 쪽 클릭시)
+    } else if (isClickedModal && e.target.className === "modal-closeBtn") {
+      modalClose(modal); // 포트폴리오 모달창 닫기 이벤트 (닫기 버튼 클릭시)
+    }
+  });
+  // 포트폴리오 모달창 닫기 이벤트 (ESC 입력시)
+  window.addEventListener("keyup", (e) => {
+    if (isClickedModal && e.key === "Escape") {
+      modalClose(modal);
+    }
+  });
+}
 
 // 여기서부터 이벤트 리스너 함수입니다.
 
@@ -141,8 +169,8 @@ function durationScrollTo(y, duration = 1000) {
   }, 1);
 }
 
-function modalClose() {
-  $portfolioModal.style.display = "none";
+function modalClose($modal) {
+  $modal.remove();
   isClickedModal = false;
   document.body.style.overflow = "scroll";
 }
