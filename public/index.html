@@ -1,323 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap");
     </style>
-  <script src="https://kit.fontawesome.com/978ea69574.js" crossorigin="anonymous"></script>
-  <title>김민규의 이력서 페이지</title>
-</head>
+    <title>김민규의 이력서 페이지</title>
+  </head>
 
-<body>
+  <body>
+    <header id="header">
+      <div id="navbar">
+        <ul>
+          <li id="home-Btn"><a href="#header">Home</a></li>
+          <li id="profile-Btn"><a href="#profile">Introduction</a></li>
+          <li id="introductions-Btn">
+            <a href="#introductions">Experience & Skill</a>
+          </li>
+          <li id="portfolio-btn"><a href="#portfolio">Projects</a></li>
+        </ul>
+      </div>
 
-  <header id="header">
+      <div id="nav-Btn"><i class="fas fa-bars"></i></div>
 
-    <div id="navbar">
-      <ul>
-        <li id="home-Btn"><a href="#header">Home</a></li>
-        <li id="profile-Btn"><a href="#profile">Introduction</a></li>
-        <li id="introductions-Btn"><a href="#introductions">Experience & Skill</a></li>
-        <li id="portfolio-btn"><a href="#portfolio">Projects</a></li>
-      </ul>
-    </div>
-
-    <div id="nav-Btn"><i class="fas fa-bars"></i></div>
-    
-    <div id="main-intro">
+      <div id="main-intro">
         <h1><img src="./image/emoji.png" alt=emoji"/></h1>
         <h2>안녕하세요. <span>예비 프론트엔드 개발자 김민규</span> 입니다.</h2>
-    </div>
-    <div id="scroll-pointer">
-      <i class="fas fa-angle-double-down"></i>
-    </div>
-  </header>
-
-
-
-  <main>
-    <section class="profile" id="profile">
-      <h2 class="title">Introduction.</h2>
-      <div class="profile-box">
-        <div class="info">   
-          <img src="./image/profile.PNG" alt="me">
-          <h3>김민규</h3>
-          <h5>엘리스 SW엔지니어 트랙 1기 수료생<h5>
-          <ul class="link-box">
-            <li><a href="https://github.com/kimbigmin" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
-          </ul>
-        </div>
-        <div class="contents">
-          <p class="profile-box-feature">✔️ 평소 시간 관리를 위해 매일 계획표를 작성하고 사용한 시간을 분석합니다.</p>
-          <p class="profile-box-feature">✔️ JavaScript 기초지식을 중요시 합니다.</p>
-          <p class="profile-box-feature">✔️ 자기성장에 대해 갈망합니다.</p>
-          <p class="profile-box-feature">✔️ 명상을 좋아합니다.</p>
-        </div>
       </div>
-    </section>
+      <div id="scroll-pointer">
+        <i class="fas fa-angle-double-down"></i>
+      </div>
+    </header>
 
-
-    <section class="introductions" id="introductions">
-      <article class="introduction">
-        
-        <div class="contents-box">
-          <h2>Education Experience.</h2>
-          <div class="contents-inner-container">
-            <div class="inner-container-title">
-              <h3>엘리스 소프트웨어 엔지니어 트랙 1기 (프론트엔드 과정)</h3>
-              <p>2021.10 ~ 2022.02</p>
-            </div>
-            <div class="inner-container-contents">
-              <div class="contents-detail">
-                <h3><span class="highlight">교육을 듣게 된 계기와 느낀점</span></h3> 
-                <p>혼자서 웹 개발 독학을 약 6개월 정도 하면서 프론트엔드 개발자가 되기 위한 깊은 지식을 쌓고 팀 프로젝트를 경험하고 싶은 마음에 지원하였습니다. "서류 -> 코딩테스트 -> 면접" 이라는 심사과정을 거쳐 합격한 뒤 약 4개월 간 부트캠프를 진행하게 되었습니다.</p>
-                <p>
-                  독학을 하면서 경험할 수 없는 팀원들과의 협업 경험, "생활코딩" egoing님을 비롯한 현업에 계신 여러 뛰어나신 코치진분들의 퀄리티 높은 수업과 섬세한 코드리뷰를 받으며 동기들과의 2 번의 협업 개발 과정을 통해 독학으로 경험 할 수 없는 많은 경험을 통해 배울 수 있었습니다.
-                </p>
-              </div>
-              <div class="contents-detail">
-                <h3>1️⃣ 웹 프로그래밍 기초</h3> 
-                <h4>Description</h4>
-                <ul>
-                  <li>HTML, CSS에 대한 기본 지식 및 세멘틱 태그, FlexBox 및 Grid 레이아웃에 대해 학습하였습니다.</li>
-                  <li>Git을 다루는 기초 지식에 대해 배우고 Git flow , Github 사용법에 대해 학습하였습니다.</li>
-                </ul>
-                
-                <h4>What did I learn?</h4>
-                <ul>
-                  <li>HTML5, CSS3, Git, Github</li>
-                </ul>
-              </div>
-              <div class="contents-detail">
-                <h3>2️⃣ JavaScript 기초, 심화</h3> 
-                <h4>Description</h4>
-                <ul>
-                  <li>JavaScript 기초 문법과 ES6 문법에 대해 학습하였습니다.</li>
-                  <li>JavaScript의 DOM 활용, Event, this, Closure 등 심화 내용을 학습하였습니다.</li>
-                  <li>비동기 프로그래밍 + API 활용법을 학습하였습니다.</li>
-                </ul>
-                
-                <h4>What did I learn?</h4>
-                <ul>
-                  <li>JavaScript, ES6, DOM, Event, this 키워드, Closure, Class, Promise, async await, fetch, axios </li>
-                </ul>
-              </div>
-              <div class="contents-detail">
-                <h3>3️⃣ TypeScript 기초</h3> 
-                <h4>Description</h4>
-                <ul>
-                  <li>TypeScrip의 기초문법, 타입, 클래스, 인터페이스, Generic과 Decorator에 대해 학습하였습니다.</li>
-                  <li>동적 타입을 사용하는 JavaScript의 단점을 보완하기 위해 개발된 TypeScript를 사용하는 이유에 대해 학습하였습니다.</li>
-                </ul>
-
-                <h4>What did I learn?</h4>
-                <ul>
-                  <li>TypeScript</li>
-                </ul>
-              </div>
-              <div class="contents-detail">
-                <h3>4️⃣ 백엔드 기초와 데이터베이스 연동</h3> 
-                <h4>Description</h4>
-                <ul>
-                  <li>JavaScript로 서버를 구현하는 Node.js를 학습하였습니다. </li>
-                  <li>모듈에 대해 이해하고 모듈 작성 방법과 사용법, npm을 통해 설치하는 법을 학습했습니다.</li>
-                  <li>웹의 동작방식을 이해하고, Express.js의 사용법 및 Middleware에 대해 학습하였습니다. 이를 바탕으로 REST API를 이해하고 작성하는 방법에 대해 학습하였습니다.</li>
-                  <li>NoSQL 데이터베이스인 MongoDB에 대해 학습하고 Mongoose를 통해 자바스크립트에서 MongoDB를 사용하는 방법을 학습하였습니다.</li>
-                  <li>JWT, Session을 통한 정보 보호, 권한 부여 방법을 학습하였습니다.</li>
-                </ul>
-                
-                <h4>What did I learn?</h4>
-                <ul>
-                  <li>Node.js, Express.js, MongoDB, Mongoose, npm </li>
-                </ul>
-              </div>
-              <div class="contents-detail">
-                <h3>5️⃣ 1차 팀 프로젝트 - INSPACE (독서실 좌석이용 어플리케이션)</h3> 
-                <h4>Description</h4>
-                <ul>
-                  <li>웹 서비스 프로젝트를 위해 5명의 팀원들과 기획부터 개발, 배포까지 2주간 진행했습니다.</li>
-                  <li>Vanilla JS + Node.js를 사용하여 SPA를 구현하였습니다. </li>
-                  <li>모든 과정은 애자일 방식을 통해 진행하였으며, 프로젝트를 진행하면서 팀원들과 협업하는 방법을 배우게 되었고, 실제로 코드를 작성하면서 코드를 짤 수 있는 실력이 향상되었습니다.</li>
-                </ul>
-                
-                <h4>What did I learn?</h4>
-                <ul>
-                  <li>Figma, Gitlab, Agile Programming, Git Flow</li>
-                </ul>
-              </div>
-              <div class="contents-detail">
-                <h3>6️⃣ React.js 기초, 심화</h3> 
-                <h4>Description</h4>
-                <ul>
-                  <li>SPA와 SSR의 차이점과 리액트를 사용하는 이유에 대해 학습하였습니다.</li>
-                  <li>컴포넌트와 JSX, Props, 상태, 이벤트에 대해 학습하고 React를 활용한 간단한 웹 페이지를 개발했습니다.</li>
-                  <li>함수형 컴포넌트의 상태를 변경할 수 있는 Hooks에 대해 학습하고 함수형 컴포넌트를 이용해 React App을 개발하는 방법을 학습하였습니다.</li>
-                  <li>리액트 컴포넌트 생명주기, 이벤트를 다루는 법, react-router-dom에 대해 학습하였습니다. </li>
-                  <li>CSS 전처리기, CSS in JS를 통해 컴포넌트에 스타일을 적용하는 법을 학습하였습니다.</li>
-                  <li>리액트에서의 비동기 통신을 학습하고 서버와 통신하는 방법을 학습하였습니다.</li>
-                </ul>
-                
-                <h4>What did I learn?</h4>
-                <ul>
-                  <li> React.js 기초, Styled-Components, JSX 문법, Hooks, React-Router-DOM</li>
-                </ul>
-              </div>
-              <div class="contents-detail">
-                <h3>7️⃣ 상태관리와 테스팅</h3> 
-                <h4>Description</h4>
-                <ul>
-                  <li>React의 다양한 상태관리 방법을 익히고, 언제 어떻게 적용해야 하는지 학습하였습니다.</li>
-                  <li>React의 전역 상태 관리 라이브러리인 Redux에 대해 배우고 이를 활용하여 전역 상태를 관리하는 방법을 학습하였습니다.</li>
-                  <li>자신이 작성한 코드가 정상적으로 동작하는지 확인하는 테스팅 기법에 대해 알아보고, Jest를 이용해 구현하는 방법을 학습하였습니다.</li>
-                </ul>
-                
-                <h4>What did I learn?</h4>
-                <ul>
-                  <li> Context API, Flux 패턴과 MVC패턴, Redux, Jest 기초, TDD 방법론</li>
-                </ul>
-              </div>
-              <div class="contents-detail">
-                <h3>8️⃣ 2차 팀 프로젝트 - KKABLA (IT부트캠프 정보공유 웹 커뮤니티)</h3> 
-                <h4>Description</h4>
-                <ul>
-                  <li>3주간 6명의 팀원과 기획부터 배포까지 담당하는 웹 서비스 프로젝트를 진행하였습니다.</li>
-                  <li>React.js + Node.js 를 사용하여 프로젝트를 진행했습니다.</li>
-                  <li>모든 과정은 1차 프로젝트와 동일하게 애자일 방식을 통해 진행하였으며, 학습한 내용을 바탕으로 코드를 짜면서 실력 향상에 많은 도움이 되었습니다.</li>
-                </ul>
-                
-                <h4>What did I learn?</h4>
-                <ul>
-                  <li>Material UI, React App Deployment, NGINX Reverse Proxy Setting</li>
-                </ul>
-              </div>
-            </div>
+    <main>
+      <section class="profile" id="profile">
+        <h2 class="title">Introduction.</h2>
+        <div class="profile-box">
+          <div class="info">
+            <img
+              src="./image/profile.PNG"
+              class="profile-img"
+              alt="profile-image"
+            />
+            <h3>김민규 (KIM MINGYU)</h3>
+            <ul class="link-box">
+              <li class="link-list">
+                <img
+                  src="./image/github_logo.png"
+                  class="contact-img"
+                  alt="github-logo"
+                />
+                <a
+                  href="https://github.com/kimbigmin"
+                  target="_blank"
+                  class="contact-list"
+                  >https://github.com/kimbigmin</a
+                >
+              </li>
+              <li class="link-list">
+                <img
+                  src="./image/mail_logo.png"
+                  class="contact-img"
+                  alt="mail-logo"
+                />
+                <a class="contact-list">rlaalsrb2918@naver.com</a>
+              </li>
+              <li class="link-list">
+                <img
+                  src="./image/call_logo.png"
+                  class="contact-img"
+                  alt="call-logo"
+                />
+                <a class="contact-list">010-7938-2918</a>
+              </li>
+            </ul>
           </div>
-          <div class="contents-inner-container" style="margin-top: 3rem;">
-            <div class="inner-container-title">
-              <h3>프로그래머스 JS 스터디 12기</h3>
-              <p>2021.10 ~ 2021.11</p>
-            </div>
-            <div class="inner-container-contents">
-              <div class="contents-detail">
-                <h3><span class="highlight">교육을 듣게 된 계기와 느낀점</span></h3> 
-                <p>현재 여러 프론트엔드 프레임워크들이 존재하고, 앞으로도 더 좋은 프레임워크들이 우위를 점할 수 있는 이러한 변동성이 큰 상황에서 프론트엔드 프레임워크의 기반인 JavaScript를 잘 다루는 것이 중요하다고 생각하여 약 한 달간 스터디를 진행했습니다.</p>
-                <p>
-                  "Watcha" 프론트엔드 시니어 개발자 로토님과 함께 진행하는 스터디로 매주 과제를 내주고 ZOOM을 통해 서로의 의견을 공유하는 시간을 가졌습니다. 같이 스터디를 하는 팀원, 코치분들의 코드리뷰를 통해 JavaScript에서 다루기 어려웠던 문법들을 직접 익히면서 코드를 효율적으로 작성하는 방법을 배우게 되었습니다.
-                </p>
-              </div>
-              <div class="contents-detail">
-                <h3>1️⃣ JavaScript를 사용하여 SPA 구현하기</h3> 
-                <h4>Description</h4>
-                <ul>
-                  <li>Vanilla JS를 사용하여 "TodoList, 미니 트렐로, API를 활용한 움짤 검색기" 를 SPA로 구현하였습니다.</li>
-                  <li>각 컴포넌트들의 의존성을 덜어내기 위해 App.js에서 컴포넌트를 관리하는 패턴을 학습하였습니다.</li>
-                  <li>디바운스, 스로틀링을 사용하여 이벤트를 효율적으로 다루는 법을 학습하였습니다.</li>
-                </ul>
-                
-                <h4>What did I learn?</h4>
-                <ul>
-                  <li>LocalStorage, ES5 & ES6 문법, Prototype 등</li>
-                </ul>
-              </div>
-            </div>
+          <div class="contents">
+            <p class="profile-box-feature">
+              ✔️ <span class="keyword-highlight">시간 관리</span>를 위해 매일
+              계획표를 작성하고 사용한 시간을 기록 및 분석하며 하루를
+              되돌아봅니다.
+            </p>
+            <p class="profile-box-feature">
+              ✔️ <span class="keyword-highlight">JavaScript 기초지식</span>을
+              중요시하여
+              <span class="keyword-highlight"
+                ><모던 자바스크립트 Deep Dive - 이웅모 저자></span
+              >
+              책으로 공부하고 공부한 내용을 마인드맵으로 요약, 정리하여
+              복습합니다.
+            </p>
+            <p class="profile-box-feature">
+              ✔️ 코드를 잘 작성하는 것도 중요하지만, 다른 사람의
+              <span class="keyword-highlight">코드를 잘 읽고 이해</span>하는 것
+              또한 중요하다고 생각합니다.
+            </p>
+            <p class="profile-box-feature">
+              ✔️ <span class="keyword-highlight">아침명상</span>을 좋아합니다.
+            </p>
+            <p class="profile-box-feature">
+              ✔️ 개발 뿐만 아니라
+              <span class="keyword-highlight">사람과의 관계</span>도
+              중요시합니다.
+            </p>
           </div>
         </div>
-      </article>
+      </section>
 
-      <article class="introduction">
-        <div class="contents-box">
-          <h2>Skills.</h2>
-          <div class="contents-inner-container">
-            <div class="skills-inner-container-title">
-              <h3>JavaScript</h3>
-            </div>
-            <div class="skills-inner-container-contents">
-              <div class="contents-detail">
-                <h4>What can I do?</h4>
-                <ul>
-                  <li>기초가 중요하다고 생각하여 <모던 자바스크립트 Deep Dive  - 이웅모 저자>를 활용해 JavaScript 기본 원리를 틈틈히 공부합니다.</li>
-                  <li>JavaScript, ES6 문법을 이해하고 활용할 수 있습니다.</li>
-                  <li>프로토타입 기반의 JavaScript를 이해하고 Class, 생성자 함수에 대해 이해하고 활용할 수 있습니다.</li>
-                  <li>JavaScript를 활용하여 간단한 SPA를 구현할 수 있습니다.</li>
-                  <li>자바스크립트의 비동기 처리를 이해하고 활용할 수 있습니다.</li>
-                  <li>DOM API 에 대한 이해를 갖추고 이를 활용할 수 있습니다.</li>
-                  <li>디바운스, 스로틀링을 활용하여 효율적인 이벤트 처리를 할 수 있습니다.</li>
-                  <li>fetch API 를 활용하여 서버와 요청, 응답을 주고 받을 수 있습니다.</li>
-                </ul>
+      <section class="introductions" id="introductions">
+        <article class="introduction">
+          <div class="contents-box">
+            <h2>Education Experience.</h2>
+            <div class="contents-inner-container">
+              <div class="inner-container-title">
+                <h3>엘리스 소프트웨어 엔지니어 트랙 1기 (프론트엔드 과정)</h3>
+                <p>2021.10 ~ 2022.02</p>
               </div>
-            </div>
-          </div>
-          <div class="contents-inner-container">
-            <div class="skills-inner-container-title">
-              <h3>React.js</h3>
-            </div>
-            <div class="skills-inner-container-contents">
-              <div class="contents-detail">
-                <h4>What can I do?</h4>
-                <ul>
-                  <li>기본 Hooks에 대해 이해를 하고 사용할 수 있습니다.</li>
-                  <li>JSX, Props, 리액트 이벤트 핸들링, 컴포넌트 생명주기를 이해하고 이를 활용해 코드를 작성합니다.</li>
-                  <li>React-Router-DOM을 활용해서 라우트 기능을 구현할 수 있습니다.</li>
-                  <li>Styled-Components를 사용하여 깔끔한 UI를 구성할 수 있습니다.</li>
-                  <li>useReducer, useContext를 활용하여 상태관리를 할 수 있습니다.</li>
-                  <li>Redux를 활용하여 상태관리를 할 수 있습니다.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="contents-inner-container">
-            <div class="skills-inner-container-title">
-              <h3>HTML & CSS</h3>
-            </div>
-            <div class="skills-inner-container-contents">
-              <div class="contents-detail">
-                <h4>What can I do?</h4>
-                <ul>
-                  <li>Semantic 태그를 활용하여 HTML 구조를 짤 수 있습니다.</li>
-                  <li>FlexBox, Grid를 활용하여 레이아웃을 짤 수 있습니다.</li>
-                  <li>CSS Transition, Animation을 활용하여 동적인 웹 페이지를 구현할 수 있습니다.</li>
-                  <li>깔끔한 디자인을 중요시합니다. </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="contents-inner-container">
-            <div class="skills-inner-container-title">
-              <h3>WEB</h3>
-            </div>
-            <div class="skills-inner-container-contents">
-              <div class="contents-detail">
-                <h4>What can I do?</h4>
-                <ul>
-                  <li>브라우저의 기본동작에 대한 이해를 갖추고 있습니다.</li>
-                  <li>CORS(Cross-Origin Resource Sharing)를 이해하고 관련된 에러를 프론트 단에서 처리할 수 있습니다.</li>
-                  <li>HTTP(HyperText Transfer Protocol) 기본원리, 아키텍처에 대해 이해하고 < HTTP 완벽가이드 > 교재로 공부하는 중입니다.</li>
-                  <li>REST API에 대한 기본적인 내용을 이해하고 활용합니다.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
+              <div class="inner-container-contents">
+                <div class="contents-detail">
+                  <h3>
+                    <span class="highlight">교육을 듣게 된 계기와 느낀점</span>
+                  </h3>
+                  <p>
+                    혼자서 웹 개발 독학을 약 6개월 정도 하면서 프론트엔드
+                    개발자가 되기 위한 깊은 지식을 쌓고 팀 프로젝트를 경험하고
+                    싶은 마음에 지원하였습니다. "서류 -> 코딩테스트 -> 면접"
+                    이라는 심사과정을 거쳐 합격한 뒤 약 4개월 간 부트캠프를
+                    진행하게 되었습니다.
+                  </p>
+                  <p>
+                    독학을 하면서 경험할 수 없는 팀원들과의 협업 경험,
+                    "생활코딩" egoing님을 비롯한 현업에 계신 여러 뛰어나신
+                    코치진분들의 퀄리티 높은 수업과 섬세한 코드리뷰를 받으며
+                    동기들과의 2 번의 협업 개발 과정을 통해 독학으로 경험 할 수
+                    없는 많은 경험을 통해 배울 수 있었습니다.
+                  </p>
+                </div>
+                <div class="contents-detail">
+                  <h3>1️⃣ 웹 프로그래밍 기초</h3>
+                  <h4>Description</h4>
+                  <ul>
+                    <li>
+                      HTML, CSS에 대한 기본 지식 및 세멘틱 태그, FlexBox 및 Grid
+                      레이아웃에 대해 학습하였습니다.
+                    </li>
+                    <li>
+                      Git을 다루는 기초 지식에 대해 배우고 Git flow , Github
+                      사용법에 대해 학습하였습니다.
+                    </li>
+                  </ul>
 
+                  <h4>What did I learn?</h4>
+                  <ul>
+                    <li>HTML5, CSS3, Git, Github</li>
+                  </ul>
+                </div>
+                <div class="contents-detail">
+                  <h3>2️⃣ JavaScript 기초, 심화</h3>
+                  <h4>Description</h4>
+                  <ul>
+                    <li>
+                      JavaScript 기초 문법과 ES6 문법에 대해 학습하였습니다.
+                    </li>
+                    <li>
+                      JavaScript의 DOM 활용, Event, this, Closure 등 심화 내용을
+                      학습하였습니다.
+                    </li>
+                    <li>비동기 프로그래밍 + API 활용법을 학습하였습니다.</li>
+                  </ul>
 
-    <section class="portfolio" id="portfolio">
-      <h2 class="title">Projects.</h2>
-      <div class="portfolio-box">
+                  <h4>What did I learn?</h4>
+                  <ul>
+                    <li>
+                      JavaScript, ES6, DOM, Event, this 키워드, Closure, Class,
+                      Promise, async await, fetch, axios
+                    </li>
+                  </ul>
+                </div>
+                <div class="contents-detail">
+                  <h3>3️⃣ TypeScript 기초</h3>
+                  <h4>Description</h4>
+                  <ul>
+                    <li>
+                      TypeScrip의 기초문법, 타입, 클래스, 인터페이스, Generic과
+                      Decorator에 대해 학습하였습니다.
+                    </li>
+                    <li>
+                      동적 타입을 사용하는 JavaScript의 단점을 보완하기 위해
+                      개발된 TypeScript를 사용하는 이유에 대해 학습하였습니다.
+                    </li>
+                  </ul>
+
+                  <h4>What did I learn?</h4>
+                  <ul>
+                    <li>TypeScript</li>
+                  </ul>
+                </div>
+                <div class="contents-detail">
+                  <h3>4️⃣ 백엔드 기초와 데이터베이스 연동</h3>
+                  <h4>Description</h4>
+                  <ul>
+                    <li>
+                      JavaScript로 서버를 구현하는 Node.js를 학습하였습니다.
+                    </li>
+                    <li>
+                      모듈에 대해 이해하고 모듈 작성 방법과 사용법, npm을 통해
+                      설치하는 법을 학습했습니다.
+                    </li>
+                    <li>
+                      웹의 동작방식을 이해하고, Express.js의 사용법 및
+                      Middleware에 대해 학습하였습니다. 이를 바탕으로 REST API를
+                      이해하고 작성하는 방법에 대해 학습하였습니다.
+                    </li>
+                    <li>
+                      NoSQL 데이터베이스인 MongoDB에 대해 학습하고 Mongoose를
+                      통해 자바스크립트에서 MongoDB를 사용하는 방법을
+                      학습하였습니다.
+                    </li>
+                    <li>
+                      JWT, Session을 통한 정보 보호, 권한 부여 방법을
+                      학습하였습니다.
+                    </li>
+                  </ul>
+
+                  <h4>What did I learn?</h4>
+                  <ul>
+                    <li>Node.js, Express.js, MongoDB, Mongoose, npm</li>
+                  </ul>
+                </div>
+                <div class="contents-detail">
+                  <h3>
+                    5️⃣ 1차 팀 프로젝트 - INSPACE (독서실 좌석이용 어플리케이션)
+                  </h3>
+                  <h4>Description</h4>
+                  <ul>
+                    <li>
+                      웹 서비스 프로젝트를 위해 5명의 팀원들과 기획부터 개발,
+                      배포까지 2주간 진행했습니다.
+                    </li>
+                    <li>
+                      Vanilla JS + Node.js를 사용하여 SPA를 구현하였습니다.
+                    </li>
+                    <li>
+                      모든 과정은 애자일 방식을 통해 진행하였으며, 프로젝트를
+                      진행하면서 팀원들과 협업하는 방법을 배우게 되었고, 실제로
+                      코드를 작성하면서 코드를 짤 수 있는 실력이 향상되었습니다.
+                    </li>
+                  </ul>
+
+                  <h4>What did I learn?</h4>
+                  <ul>
+                    <li>Figma, Gitlab, Agile Programming, Git Flow</li>
+                  </ul>
+                </div>
+                <div class="contents-detail">
+                  <h3>6️⃣ React.js 기초, 심화</h3>
+                  <h4>Description</h4>
+                  <ul>
+                    <li>
+                      SPA와 SSR의 차이점과 리액트를 사용하는 이유에 대해
+                      학습하였습니다.
+                    </li>
+                    <li>
+                      컴포넌트와 JSX, Props, 상태, 이벤트에 대해 학습하고
+                      React를 활용한 간단한 웹 페이지를 개발했습니다.
+                    </li>
+                    <li>
+                      함수형 컴포넌트의 상태를 변경할 수 있는 Hooks에 대해
+                      학습하고 함수형 컴포넌트를 이용해 React App을 개발하는
+                      방법을 학습하였습니다.
+                    </li>
+                    <li>
+                      리액트 컴포넌트 생명주기, 이벤트를 다루는 법,
+                      react-router-dom에 대해 학습하였습니다.
+                    </li>
+                    <li>
+                      CSS 전처리기, CSS in JS를 통해 컴포넌트에 스타일을
+                      적용하는 법을 학습하였습니다.
+                    </li>
+                    <li>
+                      리액트에서의 비동기 통신을 학습하고 서버와 통신하는 방법을
+                      학습하였습니다.
+                    </li>
+                  </ul>
+
+                  <h4>What did I learn?</h4>
+                  <ul>
+                    <li>
+                      React.js 기초, Styled-Components, JSX 문법, Hooks,
+                      React-Router-DOM
+                    </li>
+                  </ul>
+                </div>
+                <div class="contents-detail">
+                  <h3>7️⃣ 상태관리와 테스팅</h3>
+                  <h4>Description</h4>
+                  <ul>
+                    <li>
+                      React의 다양한 상태관리 방법을 익히고, 언제 어떻게
+                      적용해야 하는지 학습하였습니다.
+                    </li>
+                    <li>
+                      React의 전역 상태 관리 라이브러리인 Redux에 대해 배우고
+                      이를 활용하여 전역 상태를 관리하는 방법을 학습하였습니다.
+                    </li>
+                    <li>
+                      자신이 작성한 코드가 정상적으로 동작하는지 확인하는 테스팅
+                      기법에 대해 알아보고, Jest를 이용해 구현하는 방법을
+                      학습하였습니다.
+                    </li>
+                  </ul>
+
+                  <h4>What did I learn?</h4>
+                  <ul>
+                    <li>
+                      Context API, Flux 패턴과 MVC패턴, Redux, Jest 기초, TDD
+                      방법론
+                    </li>
+                  </ul>
+                </div>
+                <div class="contents-detail">
+                  <h3>
+                    8️⃣ 2차 팀 프로젝트 - KKABLA (IT부트캠프 정보공유 웹
+                    커뮤니티)
+                  </h3>
+                  <h4>Description</h4>
+                  <ul>
+                    <li>
+                      3주간 6명의 팀원과 기획부터 배포까지 담당하는 웹 서비스
+                      프로젝트를 진행하였습니다.
+                    </li>
+                    <li>
+                      React.js + Node.js 를 사용하여 프로젝트를 진행했습니다.
+                    </li>
+                    <li>
+                      모든 과정은 1차 프로젝트와 동일하게 애자일 방식을 통해
+                      진행하였으며, 학습한 내용을 바탕으로 코드를 짜면서 실력
+                      향상에 많은 도움이 되었습니다.
+                    </li>
+                  </ul>
+
+                  <h4>What did I learn?</h4>
+                  <ul>
+                    <li>
+                      Material UI, React App Deployment, NGINX Reverse Proxy
+                      Setting
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="contents-inner-container" style="margin-top: 3rem">
+              <div class="inner-container-title">
+                <h3>프로그래머스 JS 스터디 12기</h3>
+                <p>2021.10 ~ 2021.11</p>
+              </div>
+              <div class="inner-container-contents">
+                <div class="contents-detail">
+                  <h3>
+                    <span class="highlight">교육을 듣게 된 계기와 느낀점</span>
+                  </h3>
+                  <p>
+                    현재 여러 프론트엔드 프레임워크들이 존재하고, 앞으로도 더
+                    좋은 프레임워크들이 우위를 점할 수 있는 이러한 변동성이 큰
+                    상황에서 프론트엔드 프레임워크의 기반인 JavaScript를 잘
+                    다루는 것이 중요하다고 생각하여 약 한 달간 스터디를
+                    진행했습니다.
+                  </p>
+                  <p>
+                    "Watcha" 프론트엔드 시니어 개발자 로토님과 함께 진행하는
+                    스터디로 매주 과제를 내주고 ZOOM을 통해 서로의 의견을
+                    공유하는 시간을 가졌습니다. 같이 스터디를 하는 팀원,
+                    코치분들의 코드리뷰를 통해 JavaScript에서 다루기 어려웠던
+                    문법들을 직접 익히면서 코드를 효율적으로 작성하는 방법을
+                    배우게 되었습니다.
+                  </p>
+                </div>
+                <div class="contents-detail">
+                  <h3>1️⃣ JavaScript를 사용하여 SPA 구현하기</h3>
+                  <h4>Description</h4>
+                  <ul>
+                    <li>
+                      Vanilla JS를 사용하여 "TodoList, 미니 트렐로, API를 활용한
+                      움짤 검색기" 를 SPA로 구현하였습니다.
+                    </li>
+                    <li>
+                      각 컴포넌트들의 의존성을 덜어내기 위해 App.js에서
+                      컴포넌트를 관리하는 패턴을 학습하였습니다.
+                    </li>
+                    <li>
+                      디바운스, 스로틀링을 사용하여 이벤트를 효율적으로 다루는
+                      법을 학습하였습니다.
+                    </li>
+                  </ul>
+
+                  <h4>What did I learn?</h4>
+                  <ul>
+                    <li>LocalStorage, ES5 & ES6 문법, Prototype 등</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="introduction">
+          <div class="contents-box">
+            <h2>Skills.</h2>
+            <div class="contents-inner-container">
+              <div class="skills-inner-container-title">
+                <h3>JavaScript</h3>
+              </div>
+              <div class="skills-inner-container-contents">
+                <div class="contents-detail">
+                  <h4>What can I do?</h4>
+                  <ul>
+                    <li>
+                      기초가 중요하다고 생각하여 <모던 자바스크립트 Deep Dive -
+                      이웅모 저자>를 활용해 JavaScript 기본 원리를 틈틈히
+                      공부합니다.
+                    </li>
+                    <li>JavaScript, ES6 문법을 이해하고 활용할 수 있습니다.</li>
+                    <li>
+                      프로토타입 기반의 JavaScript를 이해하고 Class, 생성자
+                      함수에 대해 이해하고 활용할 수 있습니다.
+                    </li>
+                    <li>
+                      JavaScript를 활용하여 간단한 SPA를 구현할 수 있습니다.
+                    </li>
+                    <li>
+                      자바스크립트의 비동기 처리를 이해하고 활용할 수 있습니다.
+                    </li>
+                    <li>
+                      DOM API 에 대한 이해를 갖추고 이를 활용할 수 있습니다.
+                    </li>
+                    <li>
+                      디바운스, 스로틀링을 활용하여 효율적인 이벤트 처리를 할 수
+                      있습니다.
+                    </li>
+                    <li>
+                      fetch API 를 활용하여 서버와 요청, 응답을 주고 받을 수
+                      있습니다.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="contents-inner-container">
+              <div class="skills-inner-container-title">
+                <h3>React.js</h3>
+              </div>
+              <div class="skills-inner-container-contents">
+                <div class="contents-detail">
+                  <h4>What can I do?</h4>
+                  <ul>
+                    <li>기본 Hooks에 대해 이해를 하고 사용할 수 있습니다.</li>
+                    <li>
+                      JSX, Props, 리액트 이벤트 핸들링, 컴포넌트 생명주기를
+                      이해하고 이를 활용해 코드를 작성합니다.
+                    </li>
+                    <li>
+                      React-Router-DOM을 활용해서 라우트 기능을 구현할 수
+                      있습니다.
+                    </li>
+                    <li>
+                      Styled-Components를 사용하여 깔끔한 UI를 구성할 수
+                      있습니다.
+                    </li>
+                    <li>
+                      useReducer, useContext를 활용하여 상태관리를 할 수
+                      있습니다.
+                    </li>
+                    <li>Redux를 활용하여 상태관리를 할 수 있습니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="contents-inner-container">
+              <div class="skills-inner-container-title">
+                <h3>HTML & CSS</h3>
+              </div>
+              <div class="skills-inner-container-contents">
+                <div class="contents-detail">
+                  <h4>What can I do?</h4>
+                  <ul>
+                    <li>
+                      Semantic 태그를 활용하여 HTML 구조를 짤 수 있습니다.
+                    </li>
+                    <li>FlexBox, Grid를 활용하여 레이아웃을 짤 수 있습니다.</li>
+                    <li>
+                      CSS Transition, Animation을 활용하여 동적인 웹 페이지를
+                      구현할 수 있습니다.
+                    </li>
+                    <li>깔끔한 디자인을 중요시합니다.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="contents-inner-container">
+              <div class="skills-inner-container-title">
+                <h3>WEB</h3>
+              </div>
+              <div class="skills-inner-container-contents">
+                <div class="contents-detail">
+                  <h4>What can I do?</h4>
+                  <ul>
+                    <li>브라우저의 기본동작에 대한 이해를 갖추고 있습니다.</li>
+                    <li>
+                      CORS(Cross-Origin Resource Sharing)를 이해하고 관련된
+                      에러를 처리할 수 있습니다.
+                    </li>
+                    <li>
+                      HTTP(HyperText Transfer Protocol) 기본원리, 아키텍처에
+                      대해 이해하고 < HTTP 완벽가이드 > 교재로 공부하는
+                      중입니다.
+                    </li>
+                    <li>
+                      REST API에 대한 기본적인 내용을 이해하고 활용합니다.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <h2 class="title">Projects.</h2>
+        <div class="portfolio-box">
           <li id="kkabla">
             <div class="card">
               <p class="project-type-team">팀 프로젝트</p>
               <div class="card-image">
-                <img src="./image/logo.png"/>
+                <img src="./image/logo.png" />
               </div>
               <div class="card-info">
                 <h3>까블라 - KKABLA</h3>
                 <p class="date">2022.01 ~ 2022.02</p>
-                <p class="subtitle">React.js + Node.js 로 구현한 IT 부트캠프 정보 공유 커뮤니티</p>
+                <p class="subtitle">
+                  React.js + Node.js 로 구현한 IT 부트캠프 정보 공유 커뮤니티
+                </p>
               </div>
             </div>
           </li>
@@ -325,13 +551,15 @@
             <div class="card">
               <p class="project-type-team">팀 프로젝트</p>
               <div class="card-image">
-                <img src="./image/INSAPCE_logo.png"/>
+                <img src="./image/INSAPCE_logo.png" />
               </div>
               <div class="card-info">
                 <h3>인스페이스 - INSPACE</h3>
                 <p class="date">2021.11 ~ 2021.12</p>
-                <p class="subtitle">JavaScript + Node.js 로 구현한 SPA (독서실 좌석 관리 어플리케이션)</p>
-                
+                <p class="subtitle">
+                  JavaScript + Node.js 로 구현한 SPA (독서실 좌석 관리
+                  어플리케이션)
+                </p>
               </div>
             </div>
           </li>
@@ -339,31 +567,30 @@
             <div class="card">
               <p class="project-type-personal">개인 프로젝트</p>
               <div class="card-image">
-                <img src="./image/Time_Tracker_logo.png"/>
+                <img src="./image/Time_Tracker_logo.png" />
               </div>
               <div class="card-info">
                 <h3>Time Tracker (진행중)</h3>
                 <p class="date">2022.01 ~ 진행중</p>
-                <p class="subtitle">자신의 시간을 기록하고 분석할 수 있는 어플리케이션</p>
-                
+                <p class="subtitle">
+                  자신의 시간을 기록하고 분석할 수 있는 어플리케이션
+                </p>
               </div>
             </div>
           </li>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <p>Email: rlaalsrb2918@naver.com</p>
       </div>
-    </section>
-  </main>
+      <div>
+        <p>Github : kimbigmin</p>
+      </div>
+    </footer>
 
-
-
-  <footer>
-    <div>
-      <p>Email: rlaalsrb2918@naver.com</p>
-    </div>
-    <div>
-      <p>Github : kimbigmin </p>
-    </div>
-  </footer>
-
-  <script src="./index.js" type="module"></script>
-</body>
+    <script src="./index.js" type="module"></script>
+  </body>
 </html>

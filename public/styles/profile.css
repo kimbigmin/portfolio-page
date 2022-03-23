@@ -26,7 +26,6 @@ main #profile h2 {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin-left: -1.2rem;
   margin-top: 4.5rem;
 }
 
@@ -39,7 +38,7 @@ main #profile h2 {
   margin-left: 5rem;
 }
 
-#profile img {
+#profile .profile-img {
   width: 200px;
   height: 260px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -55,17 +54,15 @@ main #profile p {
   font-weight: lighter;
 }
 
-main #profile ul {
-  font-size: 1.4rem;
+main #profile .link-box {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   margin: 2rem 0 4rem 0;
 }
 
 main #profile li {
-  display: inline;
   color: #f57f17;
   margin: 0rem 2rem;
 }
@@ -79,13 +76,37 @@ main #profile .profile-box-feature {
 main .fab {
   color: black;
   font-weight: 500;
+  font-size: 1rem;
 }
 
 main .fab:hover {
   color: rgba(232, 152, 66, 1);
   transition-property: color;
   transition-duration: 0.5s;
+}
+
+.contact-list {
+  font-size: 1rem;
+  color: rgba(65, 65, 65, 0.651);
+}
+
+.contact-img {
+  width: 30px;
+  margin-right: 0.5rem;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyword-highlight {
   font-weight: bold;
+  background: linear-gradient(to right top, #ff6d2e 0%, #ec9f05 74%);
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 @media screen and (max-width: 860px) {
