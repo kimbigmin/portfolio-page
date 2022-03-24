@@ -86,6 +86,10 @@ header #scroll-pointer {
   animation-direction: alternate;
 }
 
+.down-arrow {
+  width: 25px;
+}
+
 @keyframes changeHeight {
   from {
     margin-top: 2rem;
@@ -112,6 +116,10 @@ header #scroll-pointer {
     display: inline-block;
     margin: 10px;
     width: 100%;
+  }
+
+  header .berger-bar {
+    width: 30px;
   }
 
   header #navbar {
