@@ -53,3 +53,12 @@ function headerShowAndHide() {
     }
   }
 }
+
+window.addEventListener(
+  "mousemove",
+  throttle((e) => {
+    if (e.clientY <= 200) {
+      $navbar.style.top = "0px";
+    }
+  }, 500)
+);
