@@ -1,1 +1,2 @@
-console.log("temp");
+import "./js/portfolioModal.js";
+import "./js/navbar.js";
