@@ -16,6 +16,7 @@ window.addEventListener("resize", () => {
 $menuBtn.addEventListener("click", navbarToggle);
 
 function navbarToggle() {
+  $navbar.style.top = "0px";
   if ($navbar.style.transform === "translateX(-200px)") {
     $navbar.style.transform = "translateX(0px)";
     $navbar.style.transition = "transform 0.3s";
