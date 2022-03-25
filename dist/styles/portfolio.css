@@ -120,7 +120,7 @@ img {
 }
 
 .modal-contents img {
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -199,6 +199,11 @@ img {
   main #portfolio article h2 {
     font-size: 2rem;
     margin: 3rem 0 3rem 0;
+  }
+
+  .modal-contents img {
+    width: 100%;
+    margin: auto;
   }
 }
 
