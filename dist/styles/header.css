@@ -49,12 +49,12 @@ header #main-intro {
   transform: translateY(50%);
 }
 
-header #main-intro span {
+/* header #main-intro span {
   background: linear-gradient(to right top, #ff6d2e 0%, #ec9f05 74%);
   color: transparent;
   -webkit-background-clip: text;
   font-weight: bold;
-}
+} */
 
 header #main-intro h2 {
   margin-top: 1rem;
