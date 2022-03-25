@@ -131,12 +131,17 @@ img {
   margin: 1rem;
   cursor: pointer;
   z-index: 9;
+  padding: 0.5rem;
+}
+
+.modal-closeBtn:hover {
+  background-color: rgba(128, 128, 128, 0.164);
 }
 
 .modal-contents .modal-title {
   width: 100%;
   margin: auto;
-  padding: 4rem 4rem 4rem 11rem;
+  padding: 4rem;
   border-bottom: 1px rgba(128, 128, 128, 0.151) solid;
 }
 
