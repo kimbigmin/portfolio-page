@@ -221,12 +221,15 @@ img {
   }
 
   .modal-closeBtn {
-    margin-right: 1rem;
     font-size: 0.5rem;
   }
 
   .modal-contents img {
     width: 100%;
+  }
+
+  .modal-contents h2 {
+    font-size: 1.2rem;
   }
 }
 
