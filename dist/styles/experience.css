@@ -94,13 +94,16 @@ article .highlight {
   -webkit-background-clip: text;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1024px) {
   main #introductions article {
     width: 90%;
+    margin: 3rem 0 3rem 0;
   }
 
   article .contents-box h2 {
     width: 90%;
+    margin: 1rem 0 5rem 0;
+    font-size: 2rem;
   }
 
   article .contents-box .contents-inner-container {
@@ -121,7 +124,11 @@ article .highlight {
   }
 
   article .contents-box .inner-container-title h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+
+  article .contents-box h3 {
+    font-size: 1.5rem;
   }
 
   article .contents-box .inner-container-contents {

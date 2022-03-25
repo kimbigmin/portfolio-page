@@ -2,22 +2,24 @@
 
 main #portfolio {
   height: 100vh;
-  width: 56%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 main #portfolio h2 {
   font-size: 2.5rem;
-  margin-bottom: 5rem;
+  margin: 1rem 0 5rem 1rem;
+  align-self: flex-start;
 }
 
 .portfolio-box {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .card {
@@ -29,6 +31,7 @@ main #portfolio h2 {
   height: 500px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   color: black;
+  margin: 0 1rem 0 1rem;
 }
 
 .card:hover {
@@ -152,6 +155,80 @@ img {
   -webkit-background-clip: text;
 }
 
+@media screen and (max-width: 1024px) {
+  main #portfolio {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main #portfolio article {
+    width: 80%;
+    margin: auto;
+  }
+
+  .card {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .portfolio-box {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .portfolio-modal .modal-contents {
+    width: 90%;
+    height: 90%;
+  }
+
+  .modal-contents .modal-title {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+  main #portfolio article h2 {
+    font-size: 2rem;
+    margin: 3rem 0 3rem 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  main #portfolio {
+    width: 100%;
+  }
+
+  .card {
+    margin: 2rem 0 2rem 0;
+    width: 100%;
+  }
+
+  .modal-title a {
+    font-size: 0.8rem;
+  }
+
+  .modal-contents video {
+    margin: 2rem 0 0 0;
+    width: 90%;
+  }
+
+  .portfolio-modal .modal-contents {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-closeBtn {
+    margin: 0.3rem;
+    font-size: 0.5rem;
+  }
+
+  .modal-contents img {
+    width: 100%;
+  }
+}
+
 footer {
   display: flex;
   justify-content: space-around;
@@ -160,6 +237,6 @@ footer {
   border-top: solid 0.5px rgba(163, 163, 163, 0.3);
   height: 5rem;
   width: 100%;
-
   font-size: 0.7rem;
+  margin-top: 2rem;
 }
