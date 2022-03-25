@@ -2,7 +2,9 @@ header {
   text-align: center;
   height: 100vh;
   background-color: rgba(199, 199, 199, 0.16);
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header #navbar {
@@ -46,7 +48,6 @@ header #main-intro {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateY(30%);
 }
 
 /* header #main-intro span {
@@ -105,14 +106,14 @@ header #scroll-pointer {
   width: 25px;
 }
 
-/* @keyframes changeHeight {
+@keyframes changeHeight {
   from {
     margin-top: 2rem;
   }
   to {
     margin-top: 3rem;
   }
-} */
+}
 
 /* nav mediaQuery */
 
@@ -161,7 +162,6 @@ header #scroll-pointer {
   }
 
   header #main-intro {
-    transform: translateY(10rem);
     margin-top: 0rem;
   }
 
