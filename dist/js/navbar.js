@@ -5,7 +5,7 @@ const $navbar = document.querySelector("#navbar");
 
 // 네비게이션바 반응형 toggle로 변경하는 이벤트 핸들러
 window.addEventListener("resize", () => {
-  if (window.innerWidth >= 860) {
+  if (window.innerWidth > 860) {
     $navbar.style.transform = "translateX(0px)";
   } else {
     $navbar.style.transform = "translateX(-200px)";
@@ -41,7 +41,7 @@ let scrollHeight = 0;
 window.addEventListener("scroll", throttle(headerShowAndHide, 300));
 
 function headerShowAndHide() {
-  if (window.innerWidth >= 860) {
+  if (window.innerWidth > 860) {
     if (scrollHeight > window.scrollY) {
       scrollHeight = window.scrollY;
       $navbar.style.top = "0px";
@@ -51,6 +51,8 @@ function headerShowAndHide() {
       $navbar.style.top = "-200px";
       $navbar.style.transition = "top ease 1500ms";
     }
+  } else {
+    $navbar.style.transform = "translateX(-200px)";
   }
 }
 

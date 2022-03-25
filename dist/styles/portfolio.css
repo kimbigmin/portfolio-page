@@ -128,11 +128,11 @@ img {
   align-self: flex-end;
   position: absolute;
   font-size: 1rem;
-  margin: 1rem;
   cursor: pointer;
   z-index: 9;
   padding: 0.5rem;
-  width: 300px;
+  width: 6rem;
+  text-align: right;
 }
 
 .modal-closeBtn:hover {
