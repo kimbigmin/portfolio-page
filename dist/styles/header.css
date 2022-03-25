@@ -46,7 +46,7 @@ header #main-intro {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateY(50%);
+  transform: translateY(30%);
 }
 
 /* header #main-intro span {
@@ -179,5 +179,15 @@ header #scroll-pointer {
     margin-top: 1rem;
     font-size: 1.5rem;
     width: 75%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  header #main-intro p {
+    font-size: 1.5rem;
+  }
+
+  .text-box {
+    width: 80%;
   }
 }
