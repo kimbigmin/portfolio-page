@@ -73,8 +73,17 @@ header #main-intro h2 {
   font-weight: 700;
 }
 
+.text-box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
 header #main-intro p {
   color: black;
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0.1rem;
 }
 
 header #scroll-pointer {
