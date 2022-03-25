@@ -220,6 +220,7 @@ img {
   }
 
   .modal-closeBtn {
+    margin-right: 1rem;
     font-size: 0.5rem;
   }
 
