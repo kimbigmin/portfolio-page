@@ -86,6 +86,10 @@ header #main-intro p {
   margin: 0.1rem;
 }
 
+header #main-intro span {
+  background-color: #ec9f05c8;
+}
+
 header #scroll-pointer {
   position: absolute;
   text-align: center;
