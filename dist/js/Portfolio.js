@@ -8,7 +8,7 @@ export default function Portfolio(initialState, $main) {
   this.render = () => {
     this.$node.innerHTML = `
       <div class="modal-contents">
-        <li class="modal-closeBtn">페이지 닫기</li>
+        <div class="modal-closeBtn">페이지 닫기</div>
         <div class="modal-title">
           <h2>${this.state.title}</h2>
           <a href="${this.state.githubUrl}" target="_blank">GitHub주소 : ${this.state.githubUrl}</a>

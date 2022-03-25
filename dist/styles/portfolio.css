@@ -126,11 +126,11 @@ img {
 
 .modal-closeBtn {
   align-self: flex-end;
-  position: fixed;
+  position: absolute;
   font-size: 1rem;
   margin: 1rem;
   cursor: pointer;
-  z-index: 99;
+  z-index: 9;
 }
 
 .modal-contents .modal-title {
