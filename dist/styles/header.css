@@ -53,6 +53,7 @@ header #main-intro span {
   background: linear-gradient(to right top, #ff6d2e 0%, #ec9f05 74%);
   color: transparent;
   -webkit-background-clip: text;
+  font-weight: bold;
 }
 
 header #main-intro h2 {
@@ -69,6 +70,7 @@ header #main-intro img {
 
 header #main-intro h2 {
   padding-bottom: 2rem;
+  font-weight: bold;
 }
 
 header #main-intro p {
