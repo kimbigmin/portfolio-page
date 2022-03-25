@@ -144,3 +144,9 @@ article .highlight {
     margin-bottom: 6rem;
   }
 }
+
+@media screen and (max-width: 420px) {
+  article .contents-box .inner-container-contents {
+    font-size: 0.9rem;
+  }
+}

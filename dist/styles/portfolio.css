@@ -132,6 +132,7 @@ img {
   cursor: pointer;
   z-index: 9;
   padding: 0.5rem;
+  width: 300px;
 }
 
 .modal-closeBtn:hover {
