@@ -29,6 +29,7 @@ article .contents-box {
 article .contents-box li {
   list-style-type: disc;
   margin: 1rem 0rem 1rem 1rem;
+  font-size: 1.1rem;
 }
 
 article .contents-box h2 {
@@ -146,6 +147,10 @@ article .highlight {
 
 @media screen and (max-width: 420px) {
   article .contents-box .inner-container-contents {
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+
+  article .contents-box li {
+    font-size: 1rem;
   }
 }
