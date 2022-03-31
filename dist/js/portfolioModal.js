@@ -10,7 +10,7 @@ const projects = {
   inspace: {
     title: "INSPACE - 독서실 좌석 관리 어플리케이션",
     githubUrl: "https://github.com/kimbigmin/INSPACE",
-    videoUrl: "",
+    videoUrl: "./video/inspace.mp4",
     imgUrl: "./image/inspace_notion.png",
   },
   timeTracker: {
