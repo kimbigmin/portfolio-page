@@ -12,6 +12,8 @@ const projects = {
     githubUrl: "https://github.com/kimbigmin/INSPACE",
     videoUrl: "./video/inspace.mp4",
     imgUrl: "./image/inspace_notion.png",
+    appUrl:
+      "http://ec2-13-124-187-18.ap-northeast-2.compute.amazonaws.com:8080/",
   },
   timeTracker: {
     title: "Time Tracker - 시간계획표 관리 및 분석 어플리케이션",
