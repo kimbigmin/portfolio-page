@@ -17,7 +17,7 @@ const projects = {
   },
   timeTracker: {
     title: "Time Tracker - 시간계획표 관리 및 분석 어플리케이션",
-    githubUrl: "http://",
+    githubUrl: "https://github.com/kimbigmin/Time-Tracker",
     videoUrl: "",
     imgUrl: "",
   },
