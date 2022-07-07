@@ -19,7 +19,7 @@ const projects = {
     title: "Time Tracker - 시간계획표 관리 및 분석 어플리케이션",
     githubUrl: "https://github.com/kimbigmin/Time-Tracker",
     videoUrl: "",
-    imgUrl: "",
+    imgUrl: "./image/timeTracker_notion.png",
   },
 };
 
