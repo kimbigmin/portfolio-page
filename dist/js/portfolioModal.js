@@ -28,11 +28,11 @@ const $portfolioBox = document.querySelector(".portfolio-box");
 
 let isClickedModal = false; // 모달창 클릭 여부 확인
 let modal; // 모달창 생성자 함수
-
 // 포트폴리오 모달창 열기 이벤트 핸들러
 $portfolioBox.addEventListener("click", (e) => {
-  if (!isClickedModal) {
-    const nodeId = e.target.closest("li").id;
+  const nodeId = e.target.closest("li").id;
+  console.log(nodeId);
+  if (!isClickedModal && nodeId !== "trouble") {
     const isNode = document.querySelector(".portfolio-modal"); // 모달창 생성자 함수가 이미 있는 지 확인
 
     if (!isNode) {
